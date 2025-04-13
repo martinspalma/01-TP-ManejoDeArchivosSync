@@ -25,5 +25,7 @@ export function combinarNArrays(arrs) {
     let aRetornar=[...new Set(resultado)].sort((a, b) =>a-b)
     return aRetornar
 }
-
+export function combinarNArrays2(arrs) { 
+    return  [...new Set(arrs.flat().sort((a, b) => a - b))];
+  }
 // exportar ambas funciones

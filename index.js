@@ -1,6 +1,6 @@
 import {leerArchivoComoString, escribirTextoEnArchivo} from './src/utils/fileUtils.js';
 import {transformarStringEnArrayDeNumeros, transformarArrayDeNumerosAUnSoloString} from './src/utils/transformUtils.js';
-import {combinarDosArrays, combinarNArrays} from './src/apareo.js';
+import {combinarDosArrays, combinarNArrays, combinarNArrays2} from './src/apareo.js';
 
 console.log(escribirTextoEnArchivo('C:/TP2/01-TP-ManejoDeArchivosSync/in/mensaje.txt', "--------Trabajo Practico N°1 Manejo de Archivos----------", true))
 
@@ -25,7 +25,9 @@ escribirTextoEnArchivo('C:/TP2/01-TP-ManejoDeArchivosSync/out/combinado3.out',
 
 let aCombinar= [array1, array2, array3, array4]
 
-escribirTextoEnArchivo('C:/TP2/01-TP-ManejoDeArchivosSync/out/combinado4.out',
-    transformarArrayDeNumerosAUnSoloString(combinarNArrays(aCombinar), ','), true);
+
+
+escribirTextoEnArchivo('C:/TP2/01-TP-ManejoDeArchivosSync/out/combinado5.out',
+    transformarArrayDeNumerosAUnSoloString(combinarNArrays2(aCombinar), ','), true);
 
     console.log('fin TP')
